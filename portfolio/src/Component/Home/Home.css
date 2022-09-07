@@ -1,0 +1,12 @@
+.home {
+  height: 400px;
+  color: white;
+}
+.home-content h1 {
+  margin: auto;
+  margin-top: 125px;
+}
+.home-content h3 {
+  margin-top: 20px;
+  color: yellowgreen;
+}

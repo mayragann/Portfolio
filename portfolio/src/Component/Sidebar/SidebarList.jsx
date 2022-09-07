@@ -58,7 +58,6 @@ const SidebarList = ({expandSidebar}) => {
                 <div className='navbar-items-only-icons'>
                     <ul>
 
-
                         <li className='nav-item'>
                             <FcHome size={30}/>
                         </li>
@@ -69,16 +68,15 @@ const SidebarList = ({expandSidebar}) => {
                             <FcFactory size={30}/>
                         </li>
 
-
                         <li className='nav-item'>
                             <MdBiotech size={30}
                                 color='orange'/>
                         </li>
 
                         <li className='nav-item'>
-                            <MdCastForEducation size={30} color="white"/>
-                           </li>
-
+                            <MdCastForEducation size={30}
+                                color="white"/>
+                        </li>
 
                         <li className='nav-item'>
                             <FcTodoList size={30}/></li>
