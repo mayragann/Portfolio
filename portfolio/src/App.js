@@ -1,8 +1,13 @@
 import React from 'react'
+import Home from './Component/Home/Home'
+import Sidebar from './Component/Sidebar/Sidebar'
 
 const App = () => {
   return (
-    <div>Hello React</div>
+    <div>
+      <Sidebar />
+      <Home />
+    </div>
   )
 }
 
