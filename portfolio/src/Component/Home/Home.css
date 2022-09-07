@@ -10,3 +10,50 @@
   margin-top: 20px;
   color: yellowgreen;
 }
+.button-for-action{
+    display: flex;
+}
+.contact-button{
+    background-color: #ff854c;
+    text-align: center;
+    width: 180px;
+    padding:10px;
+    border-radius: 90px;
+    cursor:pointer;
+    margin-top:10px;
+    border: 2px solid #d15f2a;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contact-button:hover{
+    background-color: white;
+    width:250px;
+    color:black;
+    transition-duration: 1s;
+}
+.resume-button{
+    background-color:yellowgreen;
+    text-align: center;
+    width: 180px;
+    padding:10px;
+    border-radius: 90px;
+    cursor:pointer;
+    margin-top:10px;
+    margin-left:10px;
+    border: 2px solid green;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.resume-button:hover{
+    background-color: white;
+    width:250px;
+    color:black;
+    transition-duration: 1s;
+}
+.resume-button a{
+    text-decoration: none;
+    color:white
+}
+.resume-button:hover a {
+    color:black;
+}
