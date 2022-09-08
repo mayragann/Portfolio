@@ -1,7 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "./TechStack.css"
 
 const TechStack = () => {
+    const [showMoreTech, setShowMoreTech] = useState(3);
+
+    const loadMore = () => {
+        setShowMoreTech((prev) => prev + 3);
+    }
+
     const data = [
         {
             name: "Full Stack Developer"
@@ -10,10 +16,10 @@ const TechStack = () => {
             name: "UI/UX Developer"
         },
         {
-            name: "Node js"
+            name: "React js"
         },
         {
-            name: "React js"
+            name: "Node js"
         }, {
             name: "Django"
         }, {
@@ -55,12 +61,16 @@ const TechStack = () => {
             </div>
             <div className='row'>
                 {
-                data.map((item, index) => (
-                    <div className='col-xl-4 col-lg-4 col-md-6 col-md-12'
+                data.slice(0, showMoreTech).map((item, index) => (
+                    <div className='col-xl-4 col-lg-4 col-md-6 col-sm-12'
                         key={index}>
 
-                        <div className='tech-content'>
-                            <span className='tech-number' style={{backgroundColor: colors[index]}}> {/* shows item list starting at 1 versus the usual starting at 0 */}
+                        <div className={index ===0? 'tech-content-marked tech-content':'tech-content'}>
+                            <span className='tech-number'
+                                style={
+                                    {backgroundColor: colors[index]}
+                            }>
+                                {/* shows item list starting at 1 versus the usual starting at 0--but it will not change normal index of 0 */}
                                 {
                                 index + 1
                             } </span>
@@ -71,10 +81,18 @@ const TechStack = () => {
 
                     </div>
                 ))
-            } </div>
+            };
+            </div>
+            {/* this will hide button when it reaches the last position of the array, that is what the null is for */}
+            {
+            showMoreTech >= data.length ? null : (
+                <span className='load-more-tech-stack'
+                    onClick={loadMore}>
+                    Load More
+                </span>
 
-
-        </div>
+            )
+        } </div>
     )
 }
 
