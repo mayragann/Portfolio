@@ -16,10 +16,10 @@ const TechStack = () => {
             name: "UI/UX Developer"
         },
         {
-            name: "React js"
+            name: "React Js"
         },
         {
-            name: "Node js"
+            name: "Node Js"
         }, {
             name: "Django"
         }, {
