@@ -6,6 +6,12 @@
     -webkit-box-shadow: 15px 9px 9px -2px rgb(230, 224, 224, .86);
     -moz-box-shadow: 15px 9px 9px -2px rgb(230, 224, 224, .86);
 }
+.project-list-opened{
+    border-left: 5px solid blueviolet;
+    cursor: pointer;
+    transition-duration: 1s;
+
+}
 .project-list:hover{
     border-left: 5px solid blueviolet;
     cursor: pointer;
@@ -50,4 +56,7 @@
     background-color: blueviolet;
     transition-duration: 1s;
 
+}
+.description{
+    margin:5px;
 }

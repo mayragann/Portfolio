@@ -1,36 +1,59 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {FcCollapse, FcExpand} from "react-icons/fc";
 
 const ProjectList = ({name, description, projectLink, techUsed}) => {
+    const [show, setShow] = useState(false);
+
+    const handleShow = () => {
+        setShow(!show);
+    }
+
     return (
 
-        <div className='project-list'>
+        <div className={
+                show ? 'project-list-opened project-list' : 'project-list'
+            }
+            onClick={handleShow}
+
+            // onMouseEnter={
+            //     () => setShow(true)
+            // }
+            // onMouseLeave={
+            //     () => setShow(false)}
+                >
 
             <div className='title-and-collapse-option'>
 
                 <h5>{name}</h5>
-                <p>
-                    <FcExpand size={20}>/</FcExpand>
-                </p>
+                <p> {
+                    show ? <FcCollapse size={20}>/</FcCollapse> : <FcExpand size={20}>/</FcExpand>
+                } </p>
             </div>
-            <p>{description}</p>
+            <div className='description'>
+                {
+                show ? <p>{description}</p> : <p>{
+                    description.substring(0, 150)
+                }...</p>
+            } </div>
+
             <div className='row'>
                 {
                 techUsed && techUsed.map((tech, index) => (
                     <div className='col-xl-3 col-lg-3 col-md-6 col-sm-12'
                         key={index}>
-                        <div className='tech-used-in-project'>
-                            <p>{
+                        {
+                        show ? <div className='tech-used-in-project'>
+                            <p> {
                                 tech.techname
-                            }</p>
+                            } </p>
 
-                        </div>
-
-                    </div>
-                ))}
-            </div>
+                        </div> : null
+                    } </div>
+                ))
+            } </div>
             <div className='live-demo-button'>
-                <a target='_' href={projectLink}>Live Demo</a>
+                <a target='_'
+                    href={projectLink}>Live Demo</a>
             </div>
 
         </div>
