@@ -3,8 +3,8 @@
     -webkit-box-shadow: 15px 9px 9px -2px rgb(230, 224, 224, .86);
     -moz-box-shadow: 15px 9px 9px -2px rgb(230, 224, 224, .86);
     margin-top: 50px;
-
-    height: 400px;
+    padding-bottom:50px;
+    height: auto;
 }
 .about-image img {
     height:300px;
@@ -18,7 +18,8 @@
 .about-details{
     margin-top:50px;
 }
-.about-details p{
+.about-information{
+    margin-top:10px;
     width:95%;
 }
 .about-details h5{

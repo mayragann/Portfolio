@@ -1,0 +1,45 @@
+
+.tech-stack-section{
+    margin-top: 40px;
+    height:auto;
+}
+.section-title h5{
+    text-align: center;
+}
+.tech-content{
+    padding:10px;
+    color:black;
+    margin-top:50px;
+    box-shadow: 15px 9px 9px -2px rgb(230, 224, 224, .86);
+    -webkit-box-shadow: 15px 9px 9px -2px rgb(230, 224, 224, .86);
+    -moz-box-shadow: 15px 9px 9px -2px rgb(230, 224, 224, .86);
+    border-radius: 10px;
+}
+.tech-content p{
+    text-align: center;
+    padding-top:30px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.tech-content:hover{
+    background-color:#ff854c;
+    color:white;
+    cursor: pointer;
+    transition-duration: 1s;
+    box-shadow: -6px 11px 5px -4px rgb(0, 0, 0, .42);
+    -webkit-box-shadow: -6px 11px 5px -4px rgb(0, 0, 0, .42);
+    -moz-box-shadow: -6px 11px 5px -4px rgb(0, 0, 0, .42);
+}
+.tech-number{
+    border-radius: 90px;
+    height:40px;
+    width:40px;
+    color:white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    margin: 0 auto;
+    line-height:40px;
+}
