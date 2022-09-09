@@ -19,11 +19,9 @@ const WorkExp = () => {
                     tech: 'Illustrator'
                 }, {
                     tech: 'FlexiSign'
-                },
-                {
+                }, {
                     tech: 'Indesign'
-                }, 
-                {
+                }, {
                     tech: 'Cyrious'
                 }
 
@@ -37,17 +35,14 @@ const WorkExp = () => {
             techskills: [
                 {
                     tech: 'Illustrator'
-                }, 
-                {
+                }, {
                     tech: 'FlexiSign'
-                },
-                {
+                }, {
                     tech: 'Indesign'
-                },
-                {
+                }, {
                     tech: 'Photoshop'
-                }, 
-                
+                },
+
 
             ]
         }, {
@@ -59,13 +54,11 @@ const WorkExp = () => {
             techskills: [
                 {
                     tech: 'Illustrator'
-                },
-                {
+                }, {
                     tech: 'Indesign'
-                }, 
-                {
+                }, {
                     tech: 'Photoshop'
-                }, 
+                },
 
             ]
         }, {
@@ -88,66 +81,69 @@ const WorkExp = () => {
 
 
     return (
-        <div className='container'>
+        <div className='container work-section'>
 
             <div className='section-title'>
                 <h5>Work Experience</h5>
                 <span className='line'></span>
 
             </div>
-
-            <VerticalTimeline lineColor='#ff1042'> {
-                data.map((item, index) => (
-                    <VerticalTimelineElement className="vertical-timeline-element--work"
-                        contentStyle={
-                            {
-                                background: colors[index],
-                                color: '#fff'
+            <div className='timeline-secion'>
+                <VerticalTimeline lineColor='#ff1042'>
+                    {
+                    data.map((item, index) => (
+                        <VerticalTimelineElement className="vertical-timeline-element--work"
+                            contentStyle={
+                                {
+                                    background: colors[index],
+                                    color: '#fff'
+                                }
                             }
-                        }
-                        contentArrowStyle={
-                            {borderRight: '7px solid  rgb(33, 150, 243)'}
-                        }
-                        date={item.year}
-                        dateClassName='date-class'
-                        iconStyle={
-                            {
-                                background: colors[index],
-                                color: '#fff'
+                            contentArrowStyle={
+                                {borderRight: '7px solid  rgb(33, 150, 243)'}
                             }
-                        }
-                        icon={<MdGroupWork/>}>
-                        <h3 className="vertical-timeline-element-title">
-                            {
-                            item.company
-                        }</h3>
-                        <h4 className="vertical-timeline-element-subtitle">
-                            {
-                            item.position
-                        }</h4>
+                            date={
+                                item.year
+                            }
+                            dateClassName='date-class'
+                            iconStyle={
+                                {
+                                    background: colors[index],
+                                    color: '#fff'
+                                }
+                            }
+                            icon={<MdGroupWork/>}>
+                            <h3 className="vertical-timeline-element-title">
+                                {
+                                item.company
+                            }</h3>
+                            <h4 className="vertical-timeline-element-subtitle">
+                                {
+                                item.position
+                            }</h4>
 
-                        <div className='row'>
-                            {
-                            item.techskills.map((tec, index) => (
-                                <div className='col-xl-4 col-lg-4 col-md-6 col-sm-12'
-                                    key={index}>
-                                    <div className='tech-skills'>
-                                        <p> {
-                                            tec.tech
-                                        } </p>
+                            <div className='row'>
+                                {
+                                item.techskills.map((tec, index) => (
+                                    <div className='col-xl-4 col-lg-4 col-md-6 col-sm-12'
+                                        key={index}>
+                                        <div className='tech-skills'>
+                                            <p> {
+                                                tec.tech
+                                            } </p>
+                                        </div>
                                     </div>
-                                </div>
-                            ))
-                        } </div>
+                                ))
+                            } </div>
 
-                        <p> {
-                            item.description
-                        } </p>
-                    </VerticalTimelineElement>
+                            <p> {
+                                item.description
+                            } </p>
+                        </VerticalTimelineElement>
 
-                ))
-            } </VerticalTimeline>
-
+                    ))
+                } </VerticalTimeline>
+            </div>
         </div>
     )
 }

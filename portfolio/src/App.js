@@ -1,5 +1,6 @@
 import React from 'react'
 import About from './Component/About/About'
+import Education from './Component/Education/Education'
 import Projects from './Component/Projects/Projects'
 
 import Sidebar from './Component/Sidebar/Sidebar'
@@ -13,6 +14,7 @@ const App = () => {
       <About />
       <TechStack />
       <Projects />
+      <Education />
       <WorkExp />
  
     </div>
