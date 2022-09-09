@@ -4,6 +4,7 @@ import Projects from './Component/Projects/Projects'
 
 import Sidebar from './Component/Sidebar/Sidebar'
 import TechStack from './Component/TechStack/TechStack'
+import WorkExp from './Component/WorkExp/WorkExp'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <About />
       <TechStack />
       <Projects />
+      <WorkExp />
  
     </div>
   )
