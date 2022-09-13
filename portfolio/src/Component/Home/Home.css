@@ -57,3 +57,31 @@
 .resume-button:hover a {
     color:black;
 }
+
+.github-button{
+    background-color:rgb(161, 50, 205);
+    text-align: center;
+    width: 180px;
+    padding:10px;
+    border-radius: 90px;
+    cursor:pointer;
+    margin-top:10px;
+    margin-left:10px;
+    border: 2px solid rgb(161, 50, 205);
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.github-button:hover{
+    background-color: white;
+    width:250px;
+    color:black;
+    transition-duration: 1s;
+}
+
+.github-button a{
+    text-decoration: none;
+    color:white
+}
+.github-button:hover a {
+    color:black;
+}

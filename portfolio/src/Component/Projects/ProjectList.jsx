@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {FcCollapse, FcExpand} from "react-icons/fc";
 
-const ProjectList = ({name, description, projectLink, techUsed}) => {
+const ProjectList = ({name, description, projectLink, techUsed, githubLink}) => {
     const [show, setShow] = useState(false);
 
     const handleShow = () => {
@@ -46,16 +46,27 @@ const ProjectList = ({name, description, projectLink, techUsed}) => {
                             <p> {
                                 tech.techname
                             } </p>
+                    
 
                         </div> : null
                     } </div>
                 ))
             } </div>
+               <div className='button-for-action'>
+
             <div className='live-demo-button'>
+                
                 <a target='_'
-                    href={projectLink}>Live Demo</a>
+                    href={projectLink}>Demo</a>
+            </div>
+            <div className='live-demo-button'>
+                
+                <a target='_'
+                    href={githubLink}>Github</a>
             </div>
 
+
+                    </div>
         </div>
     )
 }

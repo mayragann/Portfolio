@@ -6,6 +6,8 @@ import Projects from './Component/Projects/Projects'
 import Sidebar from './Component/Sidebar/Sidebar'
 import TechStack from './Component/TechStack/TechStack'
 import WorkExp from './Component/WorkExp/WorkExp'
+import ScrollToTop from "react-scroll-to-top";
+import "./App.css"
 
 const App = () => {
   return (
@@ -17,6 +19,12 @@ const App = () => {
       <Education />
       <WorkExp />
       <Contact />
+
+      <ScrollToTop smooth={true} 
+ 
+      color='white'
+      style= {{borderRadius:"90px", backgroundColor:"yellowgreen"}}
+      />
  
     </div>
   )

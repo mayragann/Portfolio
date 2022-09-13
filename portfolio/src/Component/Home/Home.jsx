@@ -30,6 +30,10 @@ const Home = () => {
                         Resume
                         </a>
                         </div>
+                        <div className='github-button'>
+                <a target='_'
+                    href='https://github.com/mayragann' >Github</a>
+            </div>
 
                 </div>
             </div>

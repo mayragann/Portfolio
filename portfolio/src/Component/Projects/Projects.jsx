@@ -20,6 +20,7 @@ const Projects = () => {
             Ability to search the most common beekeeping questions and display Youtube videos
             related to that question using Youtube Web API.`,
             projectLink:'https://youtu.be/mzCbEDvPuII',
+            githubLink:'https://github.com/mayragann/BeekeepingAssistant',
             techUsed:[
                 {
                     techname:'Python'
@@ -41,6 +42,7 @@ const Projects = () => {
             name:'Company Portfolio',
             description:"A front end application created for a company to use to showcase, talent, services, and a contact form to gather more information. It is mobile-user friendly as well as allows the user to change between dark and light colored themes. ",
             projectLink:'https://react-company-portfolio.netlify.app',
+            githubLink:'https://github.com/mayragann/CompanyPortfolio',
             techUsed:[
 
                 {
@@ -56,6 +58,7 @@ const Projects = () => {
             name:'Quote Generator',
             description:"A quote generator from a popular series. It also displays bios of a few of the characters. It has the ability to randomize quotes from a given list. The displayed characters are in a modal, making it user friendly. It also has the ability to change between two different themes. It is mobile friendly",
             projectLink:'https://mass-effect-quotes.netlify.app',
+            githubLink:'https://github.com/mayragann/React-Quote-Generator',
             techUsed:[
 
                 {
@@ -71,6 +74,7 @@ const Projects = () => {
             name:'Personal Portfolio',
             description:"A personal portfolio site to showcase my talents and accomplishments. It is mobile friendly, as well as has a contact form to reach out to me. It has the ability to switch between two different themes.",
             projectLink:null,
+            githubLink:'https://github.com/mayragann/Portfolio',
             techUsed:[
 
                 {
