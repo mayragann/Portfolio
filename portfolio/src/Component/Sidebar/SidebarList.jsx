@@ -10,6 +10,7 @@ import {
 
 } from 'react-icons/fc';
 import {MdBiotech, MdCastForEducation} from "react-icons/md";
+import { Link } from "react-scroll";
 
 
 const SidebarList = ({expandSidebar}) => {
@@ -26,32 +27,91 @@ const SidebarList = ({expandSidebar}) => {
 
                     <ul>
                         <li className='nav-item'>
+                            <Link to="home"
+                            spy={true}
+                            smooth={true}
+                            duration={100}
+                            offset={-100}
+                            >
+                            
                             <FcHome size={30}/>
-                            Home</li>
+                            Home
+                            </Link>
+                            </li>
+
                         <li className='nav-item'>
+                        <Link to="about"
+                            spy={true}
+                            smooth={true}
+                            duration={100}
+                            offset={-100}
+                            >
+                            
                             <FcNightPortrait size={30}/>
-                            About</li>
+                            About
+                            </Link>
+                            
+                            </li>
                             <li className='nav-item'>
+                            <Link to="tech"
+                            spy={true}
+                            smooth={true}
+                            duration={100}
+                            offset={-100}
+                            >
                             <MdBiotech size={30}
                                 color='orange'/>
-                            Tech Stack</li>
+                            Tech Stack
+                            </Link>
+                            </li>
                             <li className='nav-item'>
+                            <Link to="projects"
+                            spy={true}
+                            smooth={true}
+                            duration={100}
+                            offset={-100}
+                            >
                             <FcTodoList size={30}/>
-                            Projects</li>
+                            Projects
+                            </Link></li>
 
                             <li className='nav-item'>
+                            <Link to="education"
+                            spy={true}
+                            smooth={true}
+                            duration={100}
+                            offset={-100}
+                            >
                             <MdCastForEducation size={30}/>
-                            Education</li>
+                            Education
+                            </Link>
+                            </li>
                         <li className='nav-item'>
+                        <Link to="work"
+                            spy={true}
+                            smooth={true}
+                            duration={100}
+                            offset={-100}
+                            >
                             <FcFactory size={30}/>
-                            Work Experience</li>
+                            Work Experience
+                            </Link>
+                            </li>
 
 
 
   
                         <li className='nav-item'>
+                        <Link to="contactme"
+                            spy={true}
+                            smooth={true}
+                            duration={100}
+                            offset={-100}
+                            >
                             <FcContacts size={30}/>
-                            Contact</li>
+                            Contact
+                            </Link>
+                            </li>
                     </ul>
 
                 </div>
@@ -60,28 +120,90 @@ const SidebarList = ({expandSidebar}) => {
                 <div className='navbar-items-only-icons'>
                                        <ul>
                         <li className='nav-item'>
+                            <Link to="home"
+                            spy={true}
+                            smooth={true}
+                            duration={100}
+                            offset={-100}
+                            >
+                            
                             <FcHome size={30}/>
+                           
+                            </Link>
                             </li>
+
                         <li className='nav-item'>
+                        <Link to="about"
+                            spy={true}
+                            smooth={true}
+                            duration={100}
+                            offset={-100}
+                            >
+                            
                             <FcNightPortrait size={30}/>
+                           
+                            </Link>
+                            
                             </li>
                             <li className='nav-item'>
+                            <Link to="tech"
+                            spy={true}
+                            smooth={true}
+                            duration={100}
+                            offset={-100}
+                            >
                             <MdBiotech size={30}
                                 color='orange'/>
+                        
+                            </Link>
                             </li>
                             <li className='nav-item'>
+                            <Link to="projects"
+                            spy={true}
+                            smooth={true}
+                            duration={100}
+                            offset={-100}
+                            >
                             <FcTodoList size={30}/>
-                            </li>
+                           
+                            </Link></li>
 
                             <li className='nav-item'>
-                            <MdCastForEducation size={30} color='white'/>
+                            <Link to="education"
+                            spy={true}
+                            smooth={true}
+                            duration={100}
+                            offset={-100}
+                            >
+                            <MdCastForEducation size={30} color="white"/>
+                       
+                            </Link>
                             </li>
                         <li className='nav-item'>
+                        <Link to="work"
+                            spy={true}
+                            smooth={true}
+                            duration={100}
+                            offset={-100}
+                            >
                             <FcFactory size={30}/>
+                        
+                            </Link>
                             </li>
 
+
+
+  
                         <li className='nav-item'>
+                        <Link to="contactme"
+                            spy={true}
+                            smooth={true}
+                            duration={100}
+                            offset={-100}
+                            >
                             <FcContacts size={30}/>
+                           
+                            </Link>
                             </li>
                     </ul>
                 </div>

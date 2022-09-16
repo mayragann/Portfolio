@@ -5,7 +5,7 @@ import resume from "./Mayra_Gann_resume.pdf"
 
 const Home = () => {
     return (
-        <div className='container-fluid home'>
+        <div className='container-fluid home' id="home">
             <div className='container home-content'>
                 <h1>Hello I'm a</h1>
                 <h3>

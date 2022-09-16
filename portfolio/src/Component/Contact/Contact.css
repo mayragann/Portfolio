@@ -1,10 +1,10 @@
 .contact-section{
-    height:650px;
+    height:850px;
     box-shadow: 15px 9px 9px -2px rgb(230, 224, 224, .86);
     -webkit-box-shadow: 15px 9px 9px -2px rgb(230, 224, 224, .86);
     -moz-box-shadow: 15px 9px 9px -2px rgb(230, 224, 224, .86);
-    margin-top: 70px;
-    margin-bottom:50px;
+    margin-top: 200px;
+    margin-bottom:100px;
 }
 .contact-form-image img{
     height: 600px;

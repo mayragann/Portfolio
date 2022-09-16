@@ -81,7 +81,7 @@ const WorkExp = () => {
 
 
     return (
-        <div className='container work-section'>
+        <div className='container work-section' id='work'>
 
             <div className='section-title'>
                 <h5>Work Experience</h5>

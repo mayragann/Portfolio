@@ -10,7 +10,7 @@ const ProjectList = ({name, description, projectLink, techUsed, githubLink}) => 
 
     return (
 
-        <div className={
+        <div id='projects' className={
                 show ? 'project-list-opened project-list' : 'project-list'
             }
             onClick={handleShow}

@@ -52,7 +52,7 @@ const TechStack = () => {
         "#45032e",
     ]
     return (
-        <div className='container tech-stack-section'>
+        <div className='container tech-stack-section' id="tech">
 
             <div className='section-title'>
                 <h5>Tech Stack</h5>
@@ -81,7 +81,7 @@ const TechStack = () => {
 
                     </div>
                 ))
-            };
+            }
             </div>
             {/* this will hide button when it reaches the last position of the array, that is what the null is for */}
             {
