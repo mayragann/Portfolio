@@ -45,3 +45,11 @@
     color:white;
    
 }
+
+@media (max-width:1000px){
+    .contact-section{
+        height:auto;
+        padding-bottom:30px;
+    }
+    
+}

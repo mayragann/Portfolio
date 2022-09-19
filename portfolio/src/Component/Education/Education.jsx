@@ -19,7 +19,7 @@ const Education = () => {
             year: '2013-2015'
         }
     ]
-    const colors = ["#336699","#080357"]
+    const colors = ["#365EAD","#AD8636"]
     return (
         <div className='container education-section' id='education'>
 

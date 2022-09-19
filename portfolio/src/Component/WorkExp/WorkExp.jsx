@@ -77,7 +77,7 @@ const WorkExp = () => {
 
         },
     ]
-    const colors = ["#4BA186", "#ff1042", "#032d45", "#FF5530",]
+    const colors = ["#4BA186", "#ff1042", "#0367AD", "#FF5530",]
 
 
     return (
