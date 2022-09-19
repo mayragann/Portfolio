@@ -23,3 +23,14 @@
 .date-class{
     color:black;
 }
+
+#dark .date-class{
+    color:white;
+
+
+}
+@media (max-width: 1000px) {
+    .date-class{
+        color:white;
+    }
+  }

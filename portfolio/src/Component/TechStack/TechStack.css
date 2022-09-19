@@ -4,6 +4,8 @@
     height:auto;
     margin-bottom:50px;
 }
+
+
 .section-title h5{
     text-align: center;
 }
@@ -23,6 +25,22 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
+#dark .tech-content{
+
+    background-color:#38004c;
+    color:white;
+    box-shadow: -6px 11px 5px -4px rgb(0, 0, 0, .42);
+    -webkit-box-shadow: -6px 11px 5px -4px rgb(0, 0, 0, .42);
+    -moz-box-shadow: -6px 11px 5px -4px rgb(0, 0, 0, .42);
+}
+
+#dark .tech-content:hover{
+    background-color: black;
+    transition-duration: 1s;
+}
+#dark .tech-content-marked{
+    background: rgb(54, 6, 99);
+}
 .tech-content:hover{
     background-color:#ff854c;
     color:white;
@@ -37,6 +55,7 @@
     background: blueviolet;
     color:white;
 }
+
 .tech-number{
     border-radius: 90px;
     border: 2px solid white;

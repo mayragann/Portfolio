@@ -16,7 +16,7 @@ const Home = ({theme, changeTheme}) => {
                 theme === "light" ? (
                     <BsMoonStarsFill size={40}/>
                 ) : (
-                    <BsSunFill size={40}/>
+                    <p className='sun-theme'><BsSunFill size={40} /> </p>
                 )
             } </div>
 

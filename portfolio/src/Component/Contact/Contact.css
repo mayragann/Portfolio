@@ -3,14 +3,23 @@
     box-shadow: 15px 9px 9px -2px rgb(230, 224, 224, .86);
     -webkit-box-shadow: 15px 9px 9px -2px rgb(230, 224, 224, .86);
     -moz-box-shadow: 15px 9px 9px -2px rgb(230, 224, 224, .86);
-    margin-top: 200px;
-    margin-bottom:100px;
+    margin-top: 100px;
+
+}
+#dark .contact-section{
+
+    background-color:#38004c;
+    color:white;
+    box-shadow: -6px 11px 5px -4px rgb(0, 0, 0, .42);
+    -webkit-box-shadow: -6px 11px 5px -4px rgb(0, 0, 0, .42);
+    -moz-box-shadow: -6px 11px 5px -4px rgb(0, 0, 0, .42);
 }
 .contact-form-image img{
     height: 600px;
     width:100%;
     border-radius: 10px;
     object-fit: cover;
+    margin-top:50px;
 }
 .contact-form input{
     height:50px;
@@ -19,12 +28,25 @@
     width: 100%;
     margin-bottom:20px;
 }
+#dark .contact-form input{
+    background-color:#38004c;
+    border: 2px solid yellowgreen;
+    color:white;
+}
 .contact-form textarea{
 
     border-radius: 10px;
     margin-top:5px;
     width: 100%;
     margin-bottom:20px;
+}
+#dark .contact-form textarea{
+    background-color:#38004c;
+    border: 2px solid yellowgreen;
+    color:white
+}
+.contact-form-design{
+    margin-top:50px;
 }
 .button-submit button{
     display: flex;
