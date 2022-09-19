@@ -8,10 +8,12 @@ import TechStack from './Component/TechStack/TechStack'
 import WorkExp from './Component/WorkExp/WorkExp'
 import ScrollToTop from "react-scroll-to-top";
 import "./App.css"
+import NavbarMobileView from './Component/NavbarMobileView/NavbarMobileView'
 
 const App = () => {
   return (
     <div>
+      <NavbarMobileView />
       <Sidebar />
       <About />
       <TechStack />
