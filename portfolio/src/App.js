@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, createContext} from 'react'
 import About from './Component/About/About'
 import Contact from './Component/Contact/Contact'
 import Education from './Component/Education/Education'
@@ -10,17 +10,31 @@ import ScrollToTop from "react-scroll-to-top";
 import "./App.css"
 import NavbarMobileView from './Component/NavbarMobileView/NavbarMobileView'
 
+export const ThemeContext = createContext(null);
+
 const App = () => {
+
+  const [theme, setTheme] = useState("light")
+
+  const changeTheme = () => {
+    setTheme((prev) => (prev === "light" ? "dark":"light"));
+  }
+
   return (
-    <div>
+    <ThemeContext.Provider value={{theme, changeTheme}}>
+
+      <div id={theme}>
       <NavbarMobileView />
-      <Sidebar />
+      
+      <Sidebar changeTheme={changeTheme} theme={theme}/>
       <About />
       <TechStack />
       <Projects />
       <Education />
       <WorkExp />
       <Contact />
+      </div>
+
 
       <ScrollToTop smooth={true} 
  
@@ -28,7 +42,7 @@ const App = () => {
       style= {{borderRadius:"90px", backgroundColor:"yellowgreen"}}
       />
  
-    </div>
+    </ThemeContext.Provider>
   )
 }
 

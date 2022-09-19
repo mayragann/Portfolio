@@ -2,10 +2,24 @@ import React from 'react'
 import "./Home.css"
 import Typewriter from 'typewriter-effect';
 import resume from "./Mayra_Gann_resume.pdf"
+import {BsMoonStarsFill, BsSunFill} from 'react-icons/bs';
 
-const Home = () => {
+
+const Home = ({theme, changeTheme}) => {
     return (
         <div className='container-fluid home' id="home">
+
+            <div className='theme-change'
+                onClick={changeTheme}>
+
+                {
+                theme === "light" ? (
+                    <BsMoonStarsFill size={40}/>
+                ) : (
+                    <BsSunFill size={40}/>
+                )
+            } </div>
+
             <div className='container home-content'>
                 <h1>Hello I'm a</h1>
                 <h3>
@@ -26,14 +40,14 @@ const Home = () => {
 
                     <div className='contact-button'>Contact</div>
                     <div className='resume-button'>
-                        <a href={resume} download='Mayra_Gann_Resume.pdf'>
-                        Resume
+                        <a href={resume}
+                            download='Mayra_Gann_Resume.pdf'>
+                            Resume
                         </a>
-                        </div>
-                        <div className='github-button'>
-                <a target='_'
-                    href='https://github.com/mayragann' >Github</a>
-            </div>
+                    </div>
+                    <div className='github-button'>
+                        <a target='_' href='https://github.com/mayragann'>Github</a>
+                    </div>
 
                 </div>
             </div>
