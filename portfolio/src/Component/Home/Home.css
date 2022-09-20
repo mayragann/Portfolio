@@ -103,6 +103,7 @@
     cursor: pointer;
     z-index: 1;
 }
+
 .sun-theme{
     animation: rotation infinite 5s linear;
 }
@@ -112,5 +113,11 @@
     }
     to{
         transform: rotate(360deg);
+    }
+}
+
+@media (max-width:1000px){
+    .theme-change{
+     display: none;
     }
 }
