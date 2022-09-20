@@ -3,6 +3,7 @@ import "./Home.css"
 import Typewriter from 'typewriter-effect';
 import resume from "./Mayra_Gann_resume.pdf"
 import {BsMoonStarsFill, BsSunFill} from 'react-icons/bs';
+import Fade from 'react-reveal/Fade';
 
 
 const Home = ({theme, changeTheme}) => {
@@ -21,6 +22,10 @@ const Home = ({theme, changeTheme}) => {
             } </div>
 
             <div className='container home-content'>
+
+                <Fade left>
+
+          
                 <h1>Hello I'm a</h1>
                 <h3>
                     <Typewriter options={
@@ -35,7 +40,9 @@ const Home = ({theme, changeTheme}) => {
                     }/>
 
                 </h3>
+                </Fade>
 
+                <Fade bottom>
                 <div className='button-for-action'>
 
                     <div className='contact-button'>Contact</div>
@@ -50,6 +57,7 @@ const Home = ({theme, changeTheme}) => {
                     </div>
 
                 </div>
+                </Fade>
             </div>
 
         </div>

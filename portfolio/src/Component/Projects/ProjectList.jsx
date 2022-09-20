@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {FcCollapse, FcExpand} from "react-icons/fc";
+import Zoom from 'react-reveal/Zoom';
 
 const ProjectList = ({name, description, projectLink, techUsed, githubLink}) => {
     const [show, setShow] = useState(false);
@@ -9,7 +10,7 @@ const ProjectList = ({name, description, projectLink, techUsed, githubLink}) => 
     }
 
     return (
-
+        <Zoom right>
         <div id='projects' className={
                 show ? 'project-list-opened project-list' : 'project-list'
             }
@@ -68,6 +69,7 @@ const ProjectList = ({name, description, projectLink, techUsed, githubLink}) => 
 
                     </div>
         </div>
+        </Zoom>
     )
 }
 

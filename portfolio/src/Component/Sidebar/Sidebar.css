@@ -7,6 +7,7 @@
     background-color:#030303da;
     width:95px;
     position: fixed;
+    z-index: 1;
 }
 .sidebar-expand{
     width:230px;
@@ -33,7 +34,7 @@
     padding-right:0px!important;
     overflow: hidden;
 }
-@media (max-width:1000px){
+@media (max-width:1300px){
     .sidebar{
         display:none;
     }

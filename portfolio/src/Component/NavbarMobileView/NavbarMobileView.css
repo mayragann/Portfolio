@@ -46,7 +46,7 @@
     width:100%;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1301px) {
   .mobile-view-navbar {
     display: none;
   }

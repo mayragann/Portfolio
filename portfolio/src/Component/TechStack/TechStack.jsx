@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import "./TechStack.css"
+import Fade from 'react-reveal/Fade';
 
 const TechStack = () => {
     const [showMoreTech, setShowMoreTech] = useState(3);
@@ -61,15 +62,19 @@ const TechStack = () => {
             </div>
             <div className='row'>
                 {
-                data.slice(0, showMoreTech).map((item, index) => (
+                    data.slice(0, showMoreTech).map((item, index) => (
+                        
+                        <Fade right key={index}>
+
                     <div className='col-xl-4 col-lg-4 col-md-6 col-sm-12'
                         key={index}>
 
-                        <div className={index ===0? 'tech-content-marked tech-content':'tech-content'}>
+                        <div className={index ===0? 'tech-content-marked tech-content':'tech-content'} >
                             <span className='tech-number'
                                 style={
                                     {backgroundColor: colors[index]}
-                            }>
+                            }
+                            >
                                 {/* shows item list starting at 1 versus the usual starting at 0--but it will not change normal index of 0 */}
                                 {
                                 index + 1
@@ -80,6 +85,7 @@ const TechStack = () => {
                         </div>
 
                     </div>
+            </Fade>
                 ))
             }
             </div>

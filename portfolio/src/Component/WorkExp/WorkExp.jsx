@@ -92,7 +92,7 @@ const WorkExp = () => {
                 <VerticalTimeline lineColor='#ff1042'>
                     {
                     data.map((item, index) => (
-                        <VerticalTimelineElement className="vertical-timeline-element--work"
+                        <VerticalTimelineElement className="vertical-timeline-element--work" key={index}
                             contentStyle={
                                 {
                                     background: colors[index],

@@ -1,6 +1,8 @@
 import React from 'react'
 import Picture from "../../Picture/ProfilePicture.jpg"
 import "./About.css"
+import Zoom from 'react-reveal/Zoom';
+import Slide from 'react-reveal/Slide';
 
 const About = () => {
     return (
@@ -8,16 +10,18 @@ const About = () => {
 
             <div className='row'>
                 <div className='col-xl-6 col-lg-6 col-md-12 col-sm 12'>
-
+                <Slide left>
                     <div className='about-image'>
                         <img src={Picture}
                             alt='Profile'/>
 
                     </div>
+                    </Slide>
 
                 </div>
                 <div className='col-xl-6 col-lg-6 col-md-12 col-sm 12'>
                     <div className='about-details'>
+                    <Zoom left>
                         <h5>About Me</h5>
                         <span className='line'></span>
                         <div className='about-information'>
@@ -44,6 +48,7 @@ const About = () => {
                                developed from my time in the military and the time I spent in the Sign Industry. 
                                 I always enjoy watching when the customer received their sign and they loved it.
                         </div>
+                        </Zoom>
 
                     </div>
 
