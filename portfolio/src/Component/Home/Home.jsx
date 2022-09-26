@@ -4,6 +4,7 @@ import Typewriter from 'typewriter-effect';
 import resume from "./Mayra_Gann_resume.pdf"
 import {BsMoonStarsFill, BsSunFill} from 'react-icons/bs';
 import Fade from 'react-reveal/Fade';
+import Contact from '../Contact/Contact';
 
 
 const Home = ({theme, changeTheme}) => {
@@ -45,7 +46,7 @@ const Home = ({theme, changeTheme}) => {
                 <Fade bottom>
                 <div className='button-for-action'>
 
-                    <div className='contact-button'>Contact</div>
+            
                     <div className='resume-button'>
                         <a href={resume}
                             download='Mayra_Gann_Resume.pdf'>
